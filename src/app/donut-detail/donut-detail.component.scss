@@ -8,3 +8,20 @@ h3 {
     font-family: 'Century Gothic';
 
 }
+
+.btn{
+    color:rgb(214, 0, 0);
+    background-color: peachpuff;
+    font-family: 'Century Gothic';
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.btn:hover{
+    color:peachpuff;
+    background-color: rgb(214, 0, 0);
+    font-family: 'Century Gothic';
+    border-radius: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

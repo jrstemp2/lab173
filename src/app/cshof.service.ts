@@ -14,4 +14,5 @@ export class CSHOFService {
   getFamousPeople() {
     return this.http.get<FamousPeople>(`${this.apiUrl}/computer-science-hall-of-fame.json`);
   }
+
 }

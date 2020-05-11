@@ -8,15 +8,19 @@ import { FamousPeople } from '../interfaces/famousPeople';
   styleUrls: ['./famous-people.component.scss']
 })
 export class FamousPeopleComponent implements OnInit {
-  famousPeople: FamousPeople;
-  constructor(private fpService: CSHOFService) { }
+  
+  constructor(private fpService: CSHOFService) {}
 
-  ngOnInit(): void {
-    this.fpService.getFamousPeople().subscribe(
-      (data: FamousPeople) => this.famousPeople = { ...data },
-      error => console.error(error)
-    );
+
+  famousPeople: FamousPeople;
+  
+  people:FamousPeople[] = [];
+
+  ngOnInit(): void { 
+
+      this.fpService.getFamousPeople().subscribe(
+        (data: FamousPeople) => this.famousPeople = { ...data },
+        error => console.error(error)
+      );
   }
 }
-
-
